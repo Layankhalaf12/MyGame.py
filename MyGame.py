@@ -5,18 +5,16 @@
 # Give screenshots of the code, output and git repository containing this program.
 
 import random
-import math
-player1=0
-player2=0
-player3=0
-winner=0
-for winner in range (1,7):
-  player1=int(input("please Enter player1"))
-  player2=int(input("Enter the player2 :"))
-  player3=int(input("Enter the player3 :"))
-  print(winner)
-  largest=0
-  largest=max(player1,player2,player3 )
-  print("the largest number between the three players is "+str(largest))
-   
-     
+
+
+
+player1 = random.randint(1, 6)  # Player 1 rolls the dice
+player2 = random.randint(1, 6)  # Player 2 rolls the dice
+player3 = random.randint(1, 6)  # Player 3 rolls the dice
+if __name__ == "__main__":
+ print("player 1 is "+str(player1))
+ print("player 2 is "+str(player2))
+ print("player 3 is "+str(player3))
+if __name__ == "__main__": # this code will run only when direct executed not when import
+ largest=max(player1,player2,player3 )
+ print("the largest number between the three players is "+str(largest))
